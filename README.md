@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Codespace-JashanSandhu
+- 👋 Hi, I’m Jashandeep Singh Sandhu.
 - 👀 I’m interested in python, Powershell scripting, website development and networking.
 - 🌱 I’m currently learning mobile app development and improving web developemnt skills as well.
 - 💞️ I’m looking to collaborate on any topic of interest as mentioned already.
