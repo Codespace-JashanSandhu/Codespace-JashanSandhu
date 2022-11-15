@@ -35,9 +35,38 @@
 8. You can use the following code -
 
 ```html
-<>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registeration</title>
+        <link rel="stylesheet" href="bootstrap.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <h1>Wait time</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form action="connect.php" method="post">
+                            <div class="form-group">
+                                <label for="username">User Name</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="text" class="form-control" id="password" name="password" required>
+                            </div>
+                            <input type="submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-```
+    </body>
+</html>
+``` 
+```You'll find bootstarp.css in this repository.```
 
