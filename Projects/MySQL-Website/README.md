@@ -46,7 +46,7 @@
             <div class="row col-md-6 col-md-offset-3">
                 <div class="panel panel-primary">
                     <div class="panel-heading text-center">
-                        <h1>Wait time</h1>
+                        <h1>User Registeration</h1>
                     </div>
                     <div class="panel-body">
                         <form action="connect.php" method="post">
