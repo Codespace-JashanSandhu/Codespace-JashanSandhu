@@ -68,5 +68,67 @@
     </body>
 </html>
 ``` 
-```You'll find bootstarp.css in this repository.```
+Php code to connect to database and INSERT data in table -
+
+```php
+<?php
+// Creating variables to receive data from index.html via POST method.
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+// Attempting to  connect to database.
+
+$server_name='localhost';
+$data_user='root';
+$data_password='';
+$data_name='users';
+
+$conn=mysqli_connect($server_name, $data_user, $data_password,$data_name);
+
+// Warns if conenction failed.
+if(!$conn){
+    die('Connection Failed: ' .mysqli_connect_error());
+}
+
+// If conenction is successful
+else{
+
+    // Inserting data.
+    $sql_query = "INSERT INTO credentials (username, password) VALUES ('$username','$password')";
+    if (mysqli_query($conn, $sql_query)){
+        echo "Regitered Successfully..!";
+    }
+    // If error occurs while inserting data.
+    else{
+        echo "Error occured: " . $sql . "" . mysqli_error($conn); 
+    }
+    // Connection closed.
+    mysqli_close($conn);
+}
+?>
+```
+```You'll find bootstarp.css & connect.php in this repository.```
+
+*Up untill this point, we have a web interface where users input data i.e. Username and Password and we are storing this data into our MySQL database running on localhost using XAMPP control. Php acts as a connector between webpage and the database.*
+
+*Moving forward*
+===================================================================================
+
+*Creating a login page*
+
+------------------------------------------------------------------------------------
+
+**Now let's expand this project a little bit. We're going to create another webpage where users can query our database. First, they'll have to login; if valid, they will be redirected to a page where they can query the database.**
+
+1. Create a new `.php` file for handling login requests.
+
+2. We're going to use `SELECT` statement to verify the user credentials. You can use the following code -
+
+```php
+<?php
+
+
+?>
+```
+*login.php is in this repository.*
 
