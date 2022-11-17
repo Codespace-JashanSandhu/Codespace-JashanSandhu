@@ -210,3 +210,23 @@ else{
 *login.php & login.html are in this repository.*
 
 **Note: Please keep all these files, including `bootstrap.css` in the same folder if you're using attached files.**
+
+*By this point, we have created a very simple login system to demonstrate html, php & MySQL. Although, this is not an effective way of handling login data because of security concerns, we'll create an advanced version of this project with some basic security postures in place.*
+
+*Here are some sample output pictures for reference:*
+
+**User Registeration page**
+
+![User Registeration]( ./user_registeration.JPG "User_Registeration")
+
+**Database entries**
+
+![Database Entries]( ./database_entries.JPG "Database_entries")
+
+**User Login**
+
+![User Login*]( ./user_login.JPG "User_Login")
+
+***Feel free to reach out at jsdeep467@gmail.com or [website]***
+
+[website]: https://jashansandhu.online
